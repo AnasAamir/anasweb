@@ -1,0 +1,506 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    window.jssor_1_slider_init = function() {
+
+        var jssor_1_SlideoTransitions = [
+            [{
+                b: -1,
+                d: 1,
+                ls: 0.5
+            }, {
+                b: 0,
+                d: 1000,
+                y: 5,
+                e: {
+                    y: 6
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                ls: 0.5
+            }, {
+                b: 200,
+                d: 1000,
+                y: 25,
+                e: {
+                    y: 6
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                ls: 0.5
+            }, {
+                b: 400,
+                d: 1000,
+                y: 45,
+                e: {
+                    y: 6
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                ls: 0.5
+            }, {
+                b: 600,
+                d: 1000,
+                y: 65,
+                e: {
+                    y: 6
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                ls: 0.5
+            }, {
+                b: 800,
+                d: 1000,
+                y: 85,
+                e: {
+                    y: 6
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                ls: 0.5
+            }, {
+                b: 500,
+                d: 1000,
+                y: 195,
+                e: {
+                    y: 6
+                }
+            }],
+            [{
+                b: 0,
+                d: 2000,
+                y: 30,
+                e: {
+                    y: 3
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                rY: -15,
+                tZ: 100
+            }, {
+                b: 0,
+                d: 1500,
+                y: 30,
+                o: 1,
+                e: {
+                    y: 3
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                rY: -15,
+                tZ: -100
+            }, {
+                b: 0,
+                d: 1500,
+                y: 100,
+                o: 0.8,
+                e: {
+                    y: 3
+                }
+            }],
+            [{
+                b: 500,
+                d: 1500,
+                o: 1
+            }],
+            [{
+                b: 0,
+                d: 1000,
+                y: 380,
+                e: {
+                    y: 6
+                }
+            }],
+            [{
+                b: 300,
+                d: 1000,
+                x: 80,
+                e: {
+                    x: 6
+                }
+            }],
+            [{
+                b: 300,
+                d: 1000,
+                x: 330,
+                e: {
+                    x: 6
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                r: -110,
+                sX: 5,
+                sY: 5
+            }, {
+                b: 0,
+                d: 2000,
+                o: 1,
+                r: -20,
+                sX: 1,
+                sY: 1,
+                e: {
+                    o: 6,
+                    r: 6,
+                    sX: 6,
+                    sY: 6
+                }
+            }],
+            [{
+                b: 0,
+                d: 600,
+                x: 150,
+                o: 0.5,
+                e: {
+                    x: 6
+                }
+            }],
+            [{
+                b: 0,
+                d: 600,
+                x: 1140,
+                o: 0.6,
+                e: {
+                    x: 6
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                sX: 5,
+                sY: 5
+            }, {
+                b: 600,
+                d: 600,
+                o: 1,
+                sX: 1,
+                sY: 1,
+                e: {
+                    sX: 3,
+                    sY: 3
+                }
+            }]
+        ];
+
+        var jssor_1_options = {
+            $AutoPlay: 1,
+            $LazyLoading: 1,
+            $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 20,
+                $SpacingY: 20
+            }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*#region responsive code begin*/
+
+        var MAX_WIDTH = 3000;
+
+        function ScaleSlider() {
+            var containerElement = jssor_1_slider.$Elmt.parentNode;
+            var containerWidth = containerElement.clientWidth;
+
+            if (containerWidth) {
+
+                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                jssor_1_slider.$ScaleWidth(expectedWidth);
+            } else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+
+        ScaleSlider();
+
+        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        /*#endregion responsive code end*/
+    };
+</script>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a href="#" class="logo">
+            <span class="grey-color" style="color: grey;"> &lt;</span>
+            <span class="logo-name" style="color: purple;">Anas Aamir</span>
+            <span class="grey-color" style="color: grey;">/&gt;</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" style="color: black" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <svg viewbox="0 0 0 0" width="0" height="0" style="display:block;position:relative;left:0px;top:0px;">
+        <defs>
+            <filter id="jssor_1_flt_1" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stddeviation="4"></feGaussianBlur>
+            </filter>
+            <radialGradient id="jssor_1_grd_2">
+                <stop offset="0" stop-color="#fff"></stop>
+                <stop offset="1" stop-color="#000"></stop>
+            </radialGradient>
+            <mask id="jssor_1_msk_3">
+                <path fill="url(#jssor_1_grd_2)" d="M600,0L600,400L0,400L0,0Z" x="0" y="0" style="position:absolute;overflow:visible;"></path>
+            </mask>
+        </defs>
+    </svg>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;">
+            <div style="background-color:#d3890e;">
+                <img data-u="image" style="opacity:0.8;" data-src="img/1.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">CODE</div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">CODE</div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">CODE</div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">CODE</div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">CODE</div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">MACHINE</div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" data-src="img/2.jpg" />
+                <div data-ts="flat" data-p="540" data-po="40% 50%" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-t="6" style="left:350px;top:360px;width:900px;height:500px;position:absolute;">
+                        <svg viewbox="0 0 800 60" data-to="50% 50%" width="800" height="60" data-t="7" style="left:0px;top:-70px;display:block;position:absolute;opacity:0;font-family:'Roboto Condensed',sans-serif;font-size:60px;font-weight:700;letter-spacing:0.05em;overflow:visible;">
+                            <text fill="#454447" stroke="#ff9500" stroke-width="2" text-anchor="middle" x="400" y="60">CREATIVE
+                            </text>
+                        </svg>
+                        <div data-to="50% 50%" data-t="8" style="filter:url('#jssor_1_flt_1');left:200px;top:0px;width:600px;height:60px;position:absolute;opacity:0;color:#C49D8F;font-family:Roboto Condensed, sans-serif;font-size:48px;line-height:1.2;letter-spacing:0.1em;text-align:center;">FOR STYLISH LIFE</div>
+                        <svg viewbox="0 0 800 100" width="800" height="100" data-t="9" style="left:40px;top:250px;display:block;position:absolute;opacity:0;font-family:'Roboto Condensed',sans-serif;font-size:100px;font-weight:900;letter-spacing:0.5em;overflow:visible;">
+                            <text fill="rgba(255,255,255,0.7)" stroke="#ff9500" text-anchor="middle" x="400" y="100">DESIGNS
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#000000;">
+                <img data-u="image" style="opacity:0.8;" data-src="img/3.jpg" />
+                <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+                    <svg viewbox="0 0 600 400" data-ts="preserve-3d" width="600" height="400" data-tchd="jssor_1_msk_3" style="left:255px;top:0px;display:block;position:absolute;overflow:visible;">
+                        <g mask="url(#jssor_1_msk_3)">
+                            <path data-to="300px -180px" fill="none" stroke="rgba(250,251,252,0.5)" stroke-width="20" d="M410-350L410-10L190-10L190-350Z" x="190" y="-350" data-t="10" style="position:absolute;overflow:visible;"></path>
+                        </g>
+                    </svg>
+                    <svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="11" style="left:-800px;top:78px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;overflow:visible;">
+                        <text fill="#fafbfc" text-anchor="middle" x="400" y="72">RESOLUTIONS
+                        </text>
+                    </svg>
+                    <svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="12" style="left:1600px;top:153px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:60px;font-weight:900;overflow:visible;">
+                        <text fill="#fafbfc" text-anchor="middle" x="400" y="72">LIGHTS/ACTION
+                        </text>
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" data-src="img/4.jpg" />
+                <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+                    <div data-to="50% 50%" data-t="13" style="left:100px;top:-20px;width:800px;height:200px;position:absolute;opacity:0;">
+                        <div style="left:94px;top:35px;width:480px;height:90px;position:absolute;color:rgba(74,217,205,0.5);font-family:'Roboto Condensed',sans-serif;font-size:72px;line-height:1.2;">CREATION</div>
+                        <div style="left:307px;top:115px;width:400px;height:50px;position:absolute;color:rgba(74,217,205,0.5);font-family:'Roboto Condensed',sans-serif;font-size:42px;line-height:1.1;text-align:center;background-color:rgba(72,77,76,0.5);">for creative peoples</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" data-src="img/5.jpg" />
+                <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+                    <div data-to="50% 50%" data-t="14" style="left:690px;top:140px;width:600px;height:150px;position:absolute;opacity:0;color:#000;font-family:Georgia,'Times New Roman',Times,serif;font-size:60px;line-height:1.2;letter-spacing:0.1em;">European Royal<br />Has a long history.</div>
+                    <img data-to="50% 50%" data-t="15" style="left:780px;top:350px;width:344px;height:157px;position:absolute;opacity:0;max-width:344px;" data-src="img/wine-atlantic-ocean.png" />
+                    <img data-to="50% 50%" data-t="16" style="left:1330px;top:8px;width:172px;height:131px;position:absolute;opacity:0;max-width:172px;" data-src="img/wine-badge.png" />
+                </div>
+            </div>
+        </div>
+        <!-- <a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a> -->
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb132" style="position:absolute;bottom:24px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <h2 style="text-align: center; padding-top: 20px;text-shadow: 0px 1px 1px purple;">HOVER : FOCUS</h2>
+
+    <div class="container">
+        <div class="row" style="padding-top: 25px; text-align:center; font-size:15px;">
+
+            <div class="col-lg-3 ">
+                <div class="card bg-light" style="height: 25rem;">
+
+                    <h5>
+                        <div class="card-header" style="text-align: center; line-height:36px;">CUSTOM WEBSITES</div>
+                    </h5>
+                    <div class="card-body">
+
+                        <p class="card-text">We does customized web application and online system such as Real Estate Applications, Online Booking and reservations, Event Registration.</p>
+                        <a href="#" class="btn btn-dark">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 ">
+                <div class="card bg-light" style="height: 25rem;">
+
+                    <h5>
+                        <div class="card-header" style="text-align: center; line-height:36px;">E-COMMERCE DEVELOPMENT</div>
+                    </h5>
+                    <div class="card-body">
+
+                        <p class="card-text">Selling online is the most cost effective idea for both start-ups and the established stores. For many small size businesses, it's an inexpensive option for setting up your own store.</p>
+                        <a href="#" class="btn btn-dark">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 ">
+                <div class="card bg-light" style="height: 25rem;">
+
+                    <h5>
+                        <div class="card-header" style="text-align: center;">SEO</div>
+                    </h5>
+                    <div class="card-body">
+
+                        <p class="card-text">There is no doubt, SEO is the best online marketing strategy to bring in quality leads for your business. SEO and email marketing are to two digital marketing tools that produce higher Return of Investment.</p>
+                        <a href="#" class="btn btn-dark">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 ">
+                <div class="card bg-light" style="height: 25rem;">
+
+                    <h5>
+                        <div class="card-header" style="text-align: center;">PPC</div>
+                    </h5>
+                    <div class="card-body">
+
+                        <p class="card-text">PPC stands for pay-per-click, a model of internet marketing in which advertisers pay a fee each time one of their ads is clicked. Essentially, it's a way of buying visits to your site, rather than attempting to</p>
+                        <a href="#" class="btn btn-dark">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="text-align:center; line-height: 1.9; text-shadow: 0px 1px 1px purple;">IT'S TIME TO GROW YOUR BUSSINESS !</h2>
+
+
+        </div>
+    </div>
+
+
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h5>What We Do ?</h5>
+                            <ul class="list-unstyled" style="line-height: 1.9;">
+
+                                <li><a href="#">Custom websites</a></li>
+                                <li><a href="#">Mobile App Development</a></li>
+                                <li><a href="#">E-Commerce Development</a></li>
+                                <li><a href="#">SEO</a></li>
+
+                                <img src="img/payment-method.png" alt="payment-method" style="padding-top: 10px">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Connect with Us</h5>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoinstagram" title="instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#" class="icoyoutube" title="youtube"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=+923322177613&text=Anas" class="icowhatsapp" title="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center"> Copyright &copy; 2020 - Design and Develop Anas Aamir. All rights reserved.</p>
+                    </div>
+                </div>
+
+
+                <script type="text/javascript">
+                    jssor_1_slider_init();
+                </script>
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
